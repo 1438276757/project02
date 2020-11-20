@@ -65,9 +65,9 @@ $('#banner').tyslide({
         })
 /*服装小轮播 */
 $('#clothes-banner').tyslide({
-    boxh:223,//盒子的高度
-    w:332,//盒子的宽度
-    h:223,//图片的高度
+    boxh:340,//盒子的高度
+    w:400,//盒子的宽度
+    h:340,//图片的高度
     isShow:true,//是否显示控制器
     isShowBtn:true,//是否显示左右按钮
     controltop:10,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
