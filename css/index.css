@@ -166,7 +166,58 @@ left: 0;
 .menu{
     height: 430px;
  }
+ .menu .sidemenu{
+     height: 430px;
+     width: 200px;
+ }
+ .menu .sidemenu ul{
+     height: 430px;
+     width: 200px;
+     background-color:#f3f3f3;
+     position: relative;
+ }
+ .menu .sidemenu ul li{
+     height: 30px;
+     line-height: 30px;
+     width: 200px;
+     text-indent: 20px;
+ }
+ .menu .sidemenu ul li a{
+     color:#353535;
+     text-decoration: none;
+ }
+ .menu .sidemenu ul li:hover{
+     background-color: #fff;;
+ }
+ .menu .sidemenu ul li:hover a{
+     color: #ff6700;
+ }
+ .menu .sidemenu ul li .title{
+     width: 200px;
+     height: 30px;
+     line-height: 30px;
+ }
+ .menu .sidemenu ul li:hover{
+     background-color: #fff;
+     position: absolute;
+     z-index: 99;
+     border-top: 1px solid #ff6700;
+ } 
+ .menu .sidemenu ul li .submenu{
+     position: absolute;
+     left: 198pX;
+     top: 0;
+     border: 2px solid #ff6700;
+     height: 426px;
+     width: 500px;
+ }
+ .menu .sidemenu ul li:hover .submenu{
+     display: block;
+ }
  
+ .menu .sidemenu ul li a:hover{
+     color:#ff6700;
+ }
  
  
  /*轮播容器 */
@@ -183,12 +234,6 @@ left: 0;
 /*标题*/
 
 /*5.====电子书====*/
-.ebooks{
-    height: 496px;
-    margin-top: 34px;
-}
-/*左侧盒子*/
-
 
 /*6.====服装====*/
 .clothes{
