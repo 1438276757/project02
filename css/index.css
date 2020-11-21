@@ -533,8 +533,65 @@
 }
 /*10.推广商品*/
 .promotion {
-  height: 500px;
-  background-color: #cccccc;
+  background-color: #fff;
+  overflow: hidden;
+}
+.promotion .promotion-header {
+  border-bottom: 6px solid #ff6700;
+}
+.promotion .promotion-header h3 {
+  font-size: 24px;
+  font-weight: normal;
+  text-indent: 1em;
+  color: #ff6700;
+  padding: 5px 0;
+}
+.promotion .promotion-pptbox.pptbox {
+  overflow: visible;
+}
+.promotion .innerwrapper {
+  background-color: #fff;
+}
+.promotion .innerwrapper li a {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.promotion .innerwrapper li a .items {
+  width: 13%;
+  padding: 30px;
+  margin: 10px;
+}
+.promotion .innerwrapper li a .items .item-tit {
+  color: #333;
+  font-weight: normal;
+  margin-top: 5px;
+}
+.promotion .innerwrapper li a .items .price {
+  font-size: 22px;
+  color: #f00;
+}
+.promotion .innerwrapper li a .items .evaluate {
+  display: flex;
+}
+.promotion .innerwrapper li a .items .evaluate i {
+  width: 35px;
+  height: 20px;
+  background: url(../img/bgicon.png) no-repeat;
+  background-position: 0% 47%;
+}
+.promotion .innerwrapper li a .items .evaluate .content {
+  color: #7B7B7B;
+}
+.promotion .innerwrapper li a .items .evaluate .content span {
+  color: #E75550;
+}
+.promotion .innerwrapper li a .items:first-of-type {
+  background-color: #F2F2F2;
+}
+.promotion .controls {
+  top: -25px;
+  right: 24px;
 }
 /*11.尾部*/
 .footer {
