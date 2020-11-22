@@ -76,6 +76,41 @@ $('#clothes-banner').tyslide({
     controlsColor:"#d7d7d7",//普通控制按钮的颜色
     controlsCurrentColor:"#00ff00",//当前控制按钮的颜色
 });
+
+
+    /*运动图轮播 */
+    $(function(){
+      $('#sport-banner').tyslide({
+          boxh:340,//盒子的高度
+          w:427,//盒子的宽度
+          h:340,//图片的高度
+          isShow:true,//是否显示控制器
+          isShowBtn:true,//是否显示左右按钮
+          controltop:5,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
+          controlsW:25,//控制按钮宽度
+          controlsH:4,//控制按钮高
+          controlsColor:"gray",//普通控制按钮的颜色
+          controlsCurrentColor:"white",//当前控制按钮的颜色
+      
+      });
+      })
+  
+          /*童装图轮播 */
+  $(function(){
+      $('#kid-banner').tyslide({
+          boxh:340,//盒子的高度
+          w:427,//盒子的宽度
+          h:340,//图片的高度
+          isShow:true,//是否显示控制器
+          isShowBtn:true,//是否显示左右按钮
+          controltop:5,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
+          controlsW:25,//控制按钮宽度
+          controlsH:4,//控制按钮高
+          controlsColor:"gray",//普通控制按钮的颜色
+          controlsCurrentColor:"white",//当前控制按钮的颜色
+      
+      });
+      })
 /*推广小轮播 */
 $('.promotion-pptbox').tyslide({
   boxh:740,//盒子的高度
