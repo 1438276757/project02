@@ -129,3 +129,31 @@ $('.promotion-pptbox .controls').css({right: '25px',left: 'auto'})
 $('.promotion-pptbox').find('.item-img').css({width: '158px',
   height: '155px'})
 })
+
+/**
+ * 二维码
+ * 鼠标移入展示,反之收起
+ */
+$('.qr-code .ticket').mouseenter(function(){
+   $('.qr-code .code-box').stop().animate({
+     left: '-100px'
+   })
+})
+$('.qr-code .ticket').mouseleave(function(){
+  $('.qr-code .code-box').stop().animate({
+    left: 0
+  })
+})
+
+/**
+ * 顶部搜索栏
+ */
+$(document).scroll(function(){
+  var topDistance = $('html, body').scrollTop();
+
+  if(topDistance > 200) {
+    $('.top-search-box').slideDown()
+  }else{
+    $('.top-search-box').slideUp()
+  }
+})
