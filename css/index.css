@@ -202,7 +202,6 @@
   position: absolute;
   left: 198pX;
   top: 0;
-  border: 2px solid #ff6700;
   height: 426px;
   width: 500px;
 }
@@ -246,7 +245,7 @@
   width: 1190px;
   height: 498px;
   margin: 0 auto;
-  background-color: #ff6700;
+  background-color: #ccc;
 }
 /*推荐列表li*/
 .recommend .recommend-content ul li {
