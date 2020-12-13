@@ -1,0 +1,58 @@
+.focus {
+  position: relative;
+  width: 383px;
+  height: 114px;
+  background-color: purple;
+  overflow: hidden;
+}
+
+.focus ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600%;
+}
+
+.focus ul li {
+  float: left;
+}
+.focus ul li a img {
+  width: 120px;
+  border: 4px solid #fff;
+}
+
+.arrow-l,
+.arrow-r {
+  position: absolute;
+  top: 30%;
+  margin-top: -18px;
+  width: 18px;
+  height: 80px;
+  background: #aaa;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+  font-family: 'icomoon';
+  font-size: 18px;
+  text-decoration: none;
+  z-index: 2;
+}
+.arrow-l:hover,
+.arrow-r:hover{
+  text-decoration: none;
+}
+
+.arrow-r {
+  right: 0;
+}
+
+section{
+  display: flex;
+  margin-top: 50px;
+}
+.right-box{
+  width: 800px;
+  height: 500px;
+  background-color: pink;
+  margin-left: 100px;
+}

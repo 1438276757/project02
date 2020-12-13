@@ -7,25 +7,26 @@ $(function () {
     var state = $(this).prop('checked');
     $bodyInput.prop('checked', state);
     $allPriceInput.prop('checked', state);
+    calcTotalPrice()
   })
   $allPriceInput.change(function () {
     var state = $(this).prop('checked');
     $bodyInput.prop('checked', state);
     $theadInput.prop('checked', state);
+    calcTotalPrice()
   })
   $bodyInput.change(function () {
     var flag = true;
-    var totalPrice = 0;
+    
     $bodyInput.each(function (i, input) {
       if (!$(input).prop('checked')) {
         flag = false;
-      } else {
-        totalPrice += parseFloat($(this).closest('tr').find('.subprice').text());
       }
     })
     $theadInput.prop('checked', flag)
     $allPriceInput.prop('checked', flag)
-    $('.total').text(totalPrice.toFixed(2))
+    
+    calcTotalPrice()
   })
   $('table thead input[type=checkbox]').change(function () {
     var state = $(this).prop('checked');
@@ -43,6 +44,7 @@ $(function () {
     oldVal++;
     $nextInput.val(oldVal);
     subTotalPrice(oldVal, $(this));
+    calcTotalPrice()
   })
 
   $('.reduce').on('click', function () {
@@ -52,6 +54,7 @@ $(function () {
     oldVal = oldVal < 1 ? 1 : oldVal;
     $prevInput.val(oldVal);
     subTotalPrice(oldVal, $(this));
+    calcTotalPrice()
   })
 
   function subTotalPrice(val, dom) {
@@ -63,11 +66,32 @@ $(function () {
     $(this).closest('tr').remove();
   })
 
-  $bodyInput.each(function (i, input) {
+  // 计算总价函数
+  function calcTotalPrice(){
+    var count = 0;
     var totalPrice = 0;
-    if ($(input).prop('checked')) {
-      totalPrice += parseFloat($(this).closest('tr').find('.subprice').text());
-    }
+    $('table tbody input[type=checkbox]').each(function (i, input) {
+      if ($(input).prop('checked')) {
+        count++;
+        totalPrice += parseFloat($(input).closest('tr').find('.subprice').text());
+      }
+    })
+    console.log(totalPrice);
+    $('.total').text(totalPrice.toFixed(2))
+    $('.count').text(count)
+  }
+  function calcGoodCount(){
+    $('.goodsCount').text($('table tbody tr').length)
+  }
+  calcGoodCount()
+  
+  $('.deleteChecked').on('click',function(){
+    $bodyInput.each(function(i,input){
+      if($(this).prop('checked')){
+        $(this).closest('tr').remove();
+      }
+    })
+    calcTotalPrice()
+    calcGoodCount()
   })
-
 })
