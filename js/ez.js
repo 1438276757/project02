@@ -26,4 +26,19 @@ $(function () {
     var index = $(this).index();
     $('.ez-banner').eq(index).show().siblings().hide()
   })
+
+  /*换一批*/
+  var index = 0;
+  $('.change').click(function(){
+    index++;
+    $('.inner-box').stop(true).animate({
+      // top: -index * 500,
+      left: -index * 1200
+    },function(){
+      if(index >= 3){
+        index = 0;
+        $('.inner-box').css('left', 0);
+      }
+    })
+  })
 })
