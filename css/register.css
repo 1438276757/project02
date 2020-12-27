@@ -1,0 +1,40 @@
+.main{
+	width:525px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+.hr_1 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #3275c3;
+	height: 35px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #3275c3;
+	vertical-align:bottom;
+	padding-left:12px;
+}
+.left{
+	text-align:right;
+	width:80px;
+	height:25px;
+	padding-right:5px;
+	}
+	
+.center{
+	width:135px;
+	}
+.in{
+	width:130px;
+	height:16px;
+	border:solid 1px #79abea;
+	}
+ 
+.red{
+	color:#cc0000;
+	font-weight:bold;
+	}
+ 
+div{
+	color:#F00;
+	}	

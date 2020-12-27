@@ -1,0 +1,96 @@
+.register_mark {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.register_mark>.register {
+  width: 360px;
+  height: 390px;
+  /*border: 1px solid #f00;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 5px;
+
+
+}
+
+.register_mark>.register>.register_logo {
+  width: 360px;
+  height: 40px;
+  /*    border: 1px solid #f00;*/
+  background-color: #F7F7F7;
+  line-height: 40px;
+}
+
+.register_mark>.register>.register_logo>span:first-child {
+  font-size: 18px;
+  color: #666;
+  margin-left: 120px;
+  font-weight: bold;
+}
+
+.register_mark>.register>.register_logo>#close {
+  cursor: pointer;
+  margin-left: 90px;
+  font-weight: bold;
+
+}
+
+.register_mark>.register>form {
+  font-size: 14px;
+}
+
+.register_mark>.register>form>input:nth-child(1) {
+  width: 300px;
+  height: 30px;
+  margin: 40px 0 0 25px;
+}
+
+.register_mark>.register>form>input:nth-child(2) {
+  width: 300px;
+  height: 30px;
+  margin: 20px 0 0 25px;
+}
+
+.register_mark>.register>form>input:nth-child(4) {
+  width: 300px;
+  height: 30px;
+  margin: 20px 0 0 25px;
+}
+
+.register_mark>.register>form>.register_submit {
+  display: block;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  background: #3f89ec;
+  border-radius: 3px;
+  border: 0;
+  text-align: center;
+  padding: 0 150px;
+  margin: 20px 0 0 15px;
+
+}
+#register_display{
+  height: 48px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  background: #3f89ec;
+  border-radius: 3px;
+  border: 0;
+  text-align: center;
+  padding: 0 50px;
+}

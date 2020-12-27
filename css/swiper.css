@@ -1,0 +1,38 @@
+.swiper-container{
+  min-width: 320px;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #151515;
+}
+.swiper-container .swiper-wrapper{
+  width: 300%;
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+  margin: 0;
+  width: 33.333%;
+  height: auto;
+  float: left;
+  z-index: 1;
+}
+.swiper-container .swiper-wrapper .swiper-slide img{
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  
+}
+/*轮播图的小点*/
+.my-bullet{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 0 4px;
+  background:rgba(136, 136, 136, .3);
+  padding-top: 3px;
+}
+.my-bullet-active{
+  background: #007AFF;
+}
