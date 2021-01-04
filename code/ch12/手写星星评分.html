@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <!-- 引入样式-->
+    <link rel="stylesheet" href="../../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../../css/starRate.css">
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    <!-- 引入JS -->
+    <script src="../../js/jquery-1.11.0.js"></script>
+    <script src="../../js/starRate.js"></script>
+    <script>
+        $(function(){
+            var star1 = createStarRate(3.6);
+            $('.box1').html(star1);
+
+            var star2 = createStarRate(4.2);
+            $('.box2').html(star2);
+
+            var star3 = createStarRate(4.7);
+            $('.box3').html(star3);
+
+            //扩展
+            /*
+            $('.box1').createStarRate(3.2)
+            $('.box1').createStarRate(3.6)
+            $('.box1').createStarRate(4.7)*/
+            /*计算结果是整数，就是满星
+              计算结果有小数点，就是半星
+              剩下的，使用灰色星星补充*/
+        })
+    </script>
+</body>
+</html>
